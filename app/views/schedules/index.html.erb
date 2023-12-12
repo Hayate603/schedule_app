@@ -29,7 +29,7 @@
           <% end %>
           <td><%= schedule.created_at.to_s(:ymdhm) %></td>
           <td><%= link_to "詳細", schedule %></td>
-          <td></td>
+          <td><%= link_to "編集", [:edit, schedule] %></td>
           <td></td>
         </tr>
       <% end %>
