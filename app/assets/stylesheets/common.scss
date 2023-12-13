@@ -60,6 +60,7 @@ header {
 .schedules {
   background-color: #fff;
   margin-bottom: 40px;
+  width: 100%;
 }
 
 .schedules a {
@@ -68,6 +69,10 @@ header {
 
 .schedules th {
   padding: 10px 16px;
+}
+
+.schedules td {
+  padding: 20px 16px;
 }
 
 .indexFooter {
