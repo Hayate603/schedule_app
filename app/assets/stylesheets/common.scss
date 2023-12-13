@@ -210,14 +210,25 @@ header {
   color: #2962ff;
   display: block;
   margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 12px;
 }
 
 .showTitle {
   margin-bottom: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .showTitle-text {
   font-weight: bold;
+}
+
+.showTitle-button {
+  color: #2962ff;
+  border: 1px solid #2962ff;
+  padding: 12px 20px;
 }
 
 .showSchedules {

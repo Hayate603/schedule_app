@@ -1,9 +1,10 @@
 <div class="container">
   
-  <%= link_to "一覧に戻る", :schedules, class: "showButton" %>
+  <%= link_to "← 一覧に戻る", :schedules, class: "showButton" %>
    
   <div class="showTitle">
     <h2 class="showTitle-text"><%= @schedule.title %></h2>
+    <%= link_to "編集", [:edit, @schedule], class: "showTitle-button" %>
   </div>
 
   <div class="showSchedules-container">
