@@ -2,6 +2,12 @@ body {
   background-color: #f6f6f6;
 }
 
+.required::after {
+  content: " *";
+  color: red;
+  vertical-align: middle;
+}
+
 header {
   background-color: #1c1d3b;
   text-align: center;
