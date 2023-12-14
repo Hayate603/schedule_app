@@ -1,0 +1,37 @@
+<div class="container">
+  <h2 class="newTitle">予定の新規追加</h2>
+
+  <%= render "shared/error", obj: @schedule %>
+
+  <%= form_with model: @schedule,class: :newForm do |f| %>
+    <div class="form-wrap">
+      <%= f.label :title ,"タイトル",class: "form-label required" %>
+      <%= f.text_field :title,class: "form-input",placeholder: "タイトル" %>
+    </div>
+
+    <div class="form-wrap">
+      <%= f.label :start_date ,"開始日",class: "form-label required" %>
+      <%= f.date_field :start_date,class: "form-input form-date",placeholder: "----/--/--" %>
+    </div>
+    
+    <div class="form-wrap">
+      <%= f.label :end_date ,"終了日",class: "form-label required" %>
+      <%= f.date_field :end_date,class: "form-input form-date",placeholder: "----/--/--" %>
+    </div>
+
+    <div class="form-wrap">
+    <%= f.check_box :all_day,class: "form-checkBox" %>
+    <%= f.label :all_day ,"終日の場合はチェックを入れます"%>
+    </div>
+
+    <div class="form-wrap">
+      <%= f.label :memo ,"スケジュールメモ",class: "form-label" %>
+      <%= f.text_area :memo,class: "form-text form-input",placeholder: "メモを入力する" %>
+    </div>
+
+    <div class="form-wrap form-submit">
+      <%= link_to "キャンセル", :schedules,class: "form-cancel" %>
+      <%= f.submit "保存",class: "form-save" %>
+    </div>
+  <% end %>
+</div>
